@@ -14,7 +14,6 @@ proc casutil;
     promote casdata="churned_by_contract" incaslib="casuser"
         outcaslib="casuser";
 quit;
-quit;
 
 proc casutil;
     load data=churned_by_PaymentMethod outcaslib="casuser"
