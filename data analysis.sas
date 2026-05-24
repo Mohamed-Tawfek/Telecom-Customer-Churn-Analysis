@@ -33,10 +33,3 @@ proc sql ;
         as Churned from telecom group by tenure ;
 
 quit;
-proc sql;
-create table churned_by_tenure as select tenure,
-       count(*) as Customers,
-       sum(Churn_Flag) as Churned
-from telecom
-group by tenure;
-quit;
